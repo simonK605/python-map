@@ -1,4 +1,9 @@
 import folium
+import json
+
+# Read the coordinates from a JSON
+with open('coordinates.json', 'r') as coordinatesJson:
+    coordinates = json.load(coordinatesJson)
 
 # Create a map
 map = folium.Map(
@@ -13,34 +18,13 @@ map = folium.Map(
 # Add a marker
 fg = folium.FeatureGroup(name="Map")
 
-coordinates = [
-    {
-        "location": [
-            40.726025724051794,
-            -73.99712101251961
-        ],
-        "popup": "Museum of Ice Cream",
-        "icon": folium.Icon(color="red")
-    },
-    {
-        "location": [
-            40.74844664402143,
-            -73.98554516800736
-        ],
-        "popup": "Empire State Building",
-        "icon": folium.Icon(color="green")
-    }
-]
-
 for coordinate in coordinates:
     fg.add_child(folium.Marker(
         location = coordinate["location"],
         popup = coordinate["popup"],
-        icon = coordinate["icon"]
+        icon = folium.Icon(color=coordinate["iconColor"])
     ))
 
 map.add_child(fg)
-
-
 
 map.save("map.html")
