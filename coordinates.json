@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "location": [
+            40.726025724051794,
+            -73.99712101251961
+        ],
+        "popup": "Museum of Ice Cream",
+        "iconColor": "red"
+    },
+    {
+        "id": 2,
+        "location": [
+            40.74844664402143,
+            -73.98554516800736
+        ],
+        "popup": "Empire State Building",
+        "iconColor": "green"
+    },
+    {
+        "id": 3,
+        "location": [
+            40.754184180543874,
+            -73.98059529873015
+        ],
+        "popup": "Bryant Park",
+        "iconColor": "green"
+    },
+    {
+        "id": 4,
+        "location": [
+            40.75197499419069,
+            -73.99091452319176
+        ],
+        "popup": "Madison Square Garden",
+        "iconColor": "green"
+    },
+    {
+        "id": 5,
+        "location": [
+            40.73667395252146,
+            -73.99004033182118
+        ],
+        "popup": "Union Square",
+        "iconColor": "green"
+    },
+    {
+        "id": 6,
+        "location": [
+            40.18601512750468,
+            44.51504844219279
+        ],
+        "popup": "Opera ))",
+        "iconColor": "green"
+    }
+]
